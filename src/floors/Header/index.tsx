@@ -10,7 +10,7 @@ const HeaderView: React.FC = () => {
             <div className={styles.wrapper}>
                 {/*左侧区域*/}
                 <div className={styles.left}>
-                    <img className={styles.logo} src={'https://gw.alicdn.com/imgextra/i1/O1CN0119EgaC1yoIi6UVLTQ_!!6000000006625-55-tps-80-32.svg'} />
+                    <img className={styles.logo} src={'https://gw.alicdn.com/imgextra/i1/O1CN0119EgaC1yoIi6UVLTQ_!!6000000006625-55-tps-80-32.svg'} alt={'夸克'}/>
                     <div className={styles.campus}>校园招聘</div>
                 </div>
                 {/*右侧区域*/}
@@ -25,7 +25,7 @@ const HeaderView: React.FC = () => {
                         <div className={styles.tabMenuWrapper}>
                             <div className={styles.tabMenu}>
                                 <img className={styles.tabMenuImg}
-                                     src={'https://img.alicdn.com/imgextra/i1/O1CN01Lweqz51l90BUV0ass_!!6000000004775-2-tps-252-252.png'}/>
+                                     src={'https://img.alicdn.com/imgextra/i1/O1CN01Lweqz51l90BUV0ass_!!6000000004775-2-tps-252-252.png'} alt={'移动端'}/>
                                 <div className={styles.tabMenuText}>扫码下载</div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ const HeaderView: React.FC = () => {
                         <div className={styles.tabMenuWrapper}>
                             <div className={styles.tabMenu}>
                                 <img className={styles.tabMenuImg}
-                                     src={'https://img.alicdn.com/imgextra/i1/O1CN01Lweqz51l90BUV0ass_!!6000000004775-2-tps-252-252.png'}/>
+                                     src={'https://img.alicdn.com/imgextra/i1/O1CN01Lweqz51l90BUV0ass_!!6000000004775-2-tps-252-252.png'} alt={'iPad端'}/>
                                 <div className={styles.tabMenuText}>扫码下载</div>
                             </div>
                         </div>
@@ -67,7 +67,7 @@ const HeaderView: React.FC = () => {
                                 </div>
                                 <div className={styles.tabLine}></div>
                                 <div className={styles.tabItem}>
-                                    <div className={styles.tabItemText}>TV段</div>
+                                    <div className={styles.tabItemText}>TV端</div>
                                     <div className={styles.tabItemIcon} style={{
                                         backgroundImage: `url(https://img.alicdn.com/imgextra/i1/O1CN01gZh5Cw2A685nAHsKP_!!6000000008153-2-tps-30-39.png)`
                                     }}></div>
