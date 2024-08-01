@@ -1,0 +1,140 @@
+.header {
+  width: 100%;
+  min-width: 1200px;
+  padding-top: 4px;
+}
+
+.wrapper {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  // Tip: 若不加这个属性，图片按照比例缩放，可能会导致图片高度不一致
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 65px;
+}
+
+.campus {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, .4);
+  padding: 0 30px;
+  cursor: pointer;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.right {
+  display: flex;
+}
+
+.tab {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    .tabMenu {
+      display: flex;
+        animation: moveDown .4s ease-in-out;
+    }
+  }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translateY(-14px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.tabMenuWrapper {
+  position: absolute;
+  top: 48px;
+  padding-top: 14px;
+}
+
+.tabMenu {
+  width: 100px;
+  background-color: #f8f8f8;
+  box-sizing: border-box;
+  border: 1px solid #FFF;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 14px;
+}
+
+.tabMenuImg {
+  width: 84px;
+  height: 84px;
+  margin-top: 8px;
+}
+
+.tabMenuText {
+  font-weight: 400;
+  font-size: 12px;
+  color: #1A1A1A;
+  padding: 5px 0 8px 0;
+}
+
+.tabImg {
+  width: 22px;
+  height: 22px;
+  background-size: 100% 100%;
+  margin: 5px 0 2px 0;
+}
+
+.tabItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  &:first-child {
+    padding-top: 16px;
+  }
+  &:hover {
+    transform: translateX(-5px);
+  }
+}
+
+.tabItemText {
+  font-size: 12px;
+  color: #1A1A1A;
+  margin-right: 4px;
+}
+
+.tabItemIcon {
+  width: 10px;
+  height: 10px;
+  background-size: 100% 100%;
+}
+
+.tabLine {
+  width: 72px;
+  height: 1px;
+  margin: 7.5px 0;
+  background-color: #EBEAF0;
+}
+
+.tabText {
+  font-size: 12px;
+  font-weight: 400;
+  color: #2C334D;
+}
